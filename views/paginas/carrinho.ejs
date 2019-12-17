@@ -1,0 +1,59 @@
+<%- contentFor('body') %> 
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+<div class="container"></div>
+                
+        <br><br><br><br><br>
+	<h3 class="titulo" style="margin-left:70%;">Carrinho de compras<img src="../img/carcompra.png" style="height:70px; width:120px;"></h3>
+	<h3 class="titulo"></h3>
+	      
+                <center><br>
+                
+                <div class="card" style="width: 25rem;">
+                        <img src="../img/<%=listaDeIngressos[0].imagem%>" class="card-img-top " alt="...">
+                        <div class="card-body">
+                                <h5 class="card-title"><%= listaDeIngressos[0].titulo%></h5>
+                                <p class="card-text"><%= listaDeIngressos[0].descricao%></p>
+                                <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><h2 style="color: green"> Ultimas unidades <%= listaDeIngressos[0].preco%></h2></li>
+                                        <h4 class="titulo">Antes de finalizar sua compra escolha a melhor data:</h4><br><br>
+                                
+                                        <div class="titulo"> 
+                                        <a style=" width: 376px; " href="compra/2/3" class="btn btn-success btn-sm"><%= listaDeIngressos[0].data1%></a>
+                                </div>
+                                <div class="titulo"> 
+                                        <a style=" width: 376px; margin-top:3px" href="compra/2/4" class="btn btn-success btn-sm"><%= listaDeIngressos[0].data2%></a>
+                                </div>
+                                <div class="titulo"> 
+                                        <a style=" width: 376px; margin-top:3px" href="compra/2/5" class="btn btn-success btn-sm"><%= listaDeIngressos[0].data3%></a>
+                                </div>
+                                
+                        </div>
+                        </div><br>
+        
+        </center>
+        <br>    
+                   
+</div>
+        <!-- Começo de paginação-->
+    <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item ">
+                    <a class="page-link" href="/carrinho/1" tabindex="-1">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="/carrinho/2">1</a></li>
+                  <li class="page-item"><a class="page-link" href="/carrinho/3">2</a></li>
+                  <li class="page-item"><a class="page-link" href="/carrinho/4">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Proximo</a>
+                  </li>
+                </ul>
+        </nav>
+              <!-- Começo de paginação-->  
+
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script defer src='https://d33wubrfki0l68.cloudfront.net/bundles/f382d5fa37c53c64444fe0ed1ce4cff515076f7b.js'></script>
+

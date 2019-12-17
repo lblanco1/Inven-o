@@ -1,0 +1,49 @@
+body{
+  font-size: 16px;
+  line-height: 1.5;
+  
+}
+
+header .navbar{
+  border-radius: 0;
+  margin: 0;
+}
+
+main{
+  min-height: 500px;
+  padding: 50px 0;
+}
+
+footer{
+  padding: 30px 0;
+  font-size: 14px;
+  color:  #BBB;
+  background: #222;
+  text-align: center;
+}
+element.style {
+  height: 400px;
+}
+.imagem {
+  height: 650px;
+ width: 100%;
+
+}
+.texto{
+  position: absolute;
+  margin-top: -550px;
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+}
+.topcar{
+  width: 45px;
+  height: 45px;
+}
+.logo{
+
+  position: relative;
+}
+.escolha{
+  margin-left: 30px;
+}

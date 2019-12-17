@@ -1,0 +1,25 @@
+
+<%- contentFor('body') %> 
+
+<div class="jumbotron text-center">
+        
+        <div class="row"> 
+                <div class="col-sm-12 "> 
+
+                        <% for (umContato of contato){ %>    
+                            
+                               <h2><%= umContato.nome %></h2>  
+                               <P>Obrigada por entrar em contato conosco!</P>
+                               <P>Enviamos um email para <%= umContato.email %> com a resposta à sua mensagem que foi:</P>
+                               <P><%= umContato.msg %>  </P>
+                            
+                       <% } %>
+
+
+
+                </div>
+                        
+        </div>
+
+</div>
+
